@@ -6,7 +6,7 @@ on:
       auction_id:
         description: "HiBid auction ID"
         required: true
-        default: "776304"
+        default: "778984"
 
 permissions:
   contents: read
