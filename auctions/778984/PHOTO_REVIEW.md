@@ -81,7 +81,7 @@ Additional coin findings:
 | 179 | **D / avoid as silver** | Poor/fair | 1972 Eisenhower; clad-looking and has a dark corrosion/spot issue. |
 | 180 | B/value-dependent | Circulated | 1964 Kennedy half (90% silver) + 2001 Kennedy half (clad). Only one silver coin. |
 | 183 | A- | Fair/good | 5-gal Western Stoneware cold-drink dispenser; lid, handles and wood spigot present. Body looks intact; lid edge/underside wear and age crazing. |
-| 194 | C+/B- | Unknown folded | Blue poly tarp plus tan heavier tarp. Photos show both folded, so advertised dimensions and hidden tears cannot be verified. |
+| 194 | **A-/B+ personal use** | Unknown folded | Blue poly tarp plus tan heavier tarp. Photos show both folded, so advertised dimensions and hidden tears cannot be verified. |
 | 207 | B | Fair | Two Mickey Mouse Cine Art film boxes/reels, including Pluto's Shower Bath and Wild West Mickey. Boxes worn; film present but untested. |
 | 208 | A | Good-looking, untested | Bach Soloist trombone, slide, mouthpiece and hard case. No obvious major bell dent or visibly bent slide; playability/serial not established. |
 | 212 | B+ | Good | Colorful tin-litho friction motorcycle with box and insert. Toy is clean; box shows wear. Maker/age/function not established, so do not assume early antique rarity. |
@@ -108,7 +108,7 @@ Additional coin findings:
 
 ### Strongest personal-use / property candidates
 **124, 128, 152, 237, 273**.  
-Secondary cheap-use candidates: **126, 127, 194, 298**.
+Secondary cheap-use candidates: **126, 127, 298**. **Lot 194 tarps are a primary personal-use candidate** despite the folded/unknown condition.
 
 ### Strongest Michigan/local-interest candidates
 **30, 68, 138, 141, 328**, with **28** as a secondary bottle lot.
@@ -117,7 +117,7 @@ Secondary cheap-use candidates: **126, 127, 194, 298**.
 **183, 208, 261, 263**, plus **212** if maker/age research supports it.
 
 ### Downgraded after photos
-**33, 125, 143, 168–177, 179, 194, 312, 313, 318, 325, 326, 329, 334**.
+**33, 125, 143, 168–177, 179, 312, 313, 318, 325, 326, 329, 334**.
 
 The most important downgrade is the Eisenhower-dollar group because the catalog's “40% silver” wording is not supported by the photographed coins.
 
