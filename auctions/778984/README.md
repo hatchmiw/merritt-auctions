@@ -13,6 +13,9 @@ Files:
 - [lots.json](./lots.json) — full catalog snapshot; bid values reflect export time
 - [live.json](./live.json) — current bids/status for all lots (created separately by Update All Merritt Lot Bids; absent until its first eligible refresh)
 - [photo-batches.json](./photo-batches.json) — maps each lot to its temporary photo artifact
+- [QUICK_PASS.md](./QUICK_PASS.md) — initial catalog screen
+- [PHOTO_REVIEW.md](./PHOTO_REVIEW.md) — completed priority-lot visual review
+- [photo-review.csv](./photo-review.csv) — structured visual findings
 
 Run the repository's **Run Merritt Auction** GitHub Action again to refresh this catalog snapshot and its temporary photo batches.
 The **Update All Merritt Lot Bids** Action independently refreshes live.json on an auction-aware schedule (roughly hourly beforehand, every ten minutes on auction day); it does not rewrite catalog descriptions or photos.
