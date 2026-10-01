@@ -1,22 +1,18 @@
-# Merritt Online Auction #49 — Auction 778984
+# Merritt Online Auction #49
 
 - Auction ID: **778984**
-- Catalog size: **333 lots**
-- Location: Greenville, Michigan
-- Close: **October 5, 2026**
-- Soft close begins: **6:00 PM Eastern**
-- Buyer's premium: **13%**
-- Published terms state a **3% buyer's-premium discount for cash/check**
-- Michigan sales tax: **6%**
-- Coins/currency: listed as sales-tax exempt
-- Lots: sold as-is / where-is
+- Auctioneer: **Merritt Auctions, Inc.**
+- Last export: **2026-10-01T19:33:46Z**
+- Lots: **333**
+- Photos referenced: **2525**
 
-## Review status
+Files:
 
-The initial pass is a **catalog/title screen**, not a visual condition review.
-Do not assign confident condition-dependent max bids until the lot photos have
-actually been inspected.
+- [summary.md](./summary.md)
+- [summary.csv](./summary.csv)
+- [lots.json](./lots.json) — full catalog snapshot; bid values reflect export time
+- [live.json](./live.json) — current bids/status for all lots (created separately by Update All Merritt Lot Bids; absent until its first eligible refresh)
+- [photo-batches.json](./photo-batches.json) — maps each lot to its temporary photo artifact
 
-The next repository step is to run the Merritt auction exporter so this folder
-also contains `lots.json`, `summary.csv`, `summary.md`, and
-`photo-batches.json`.
+Run the repository's **Run Merritt Auction** GitHub Action again to refresh this catalog snapshot and its temporary photo batches.
+The **Update All Merritt Lot Bids** Action independently refreshes live.json on an auction-aware schedule (roughly hourly beforehand, every ten minutes on auction day); it does not rewrite catalog descriptions or photos.
