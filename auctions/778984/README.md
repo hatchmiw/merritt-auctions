@@ -16,6 +16,8 @@ Files:
 - [QUICK_PASS.md](./QUICK_PASS.md) — initial catalog screen
 - [PHOTO_REVIEW.md](./PHOTO_REVIEW.md) — completed priority-lot visual review
 - [photo-review.csv](./photo-review.csv) — structured visual findings
+- [VALUATION_PASS.md](./VALUATION_PASS.md) — EV, bargain flags, risk-adjusted bids, stretches, and absolute ceilings
+- [valuation.csv](./valuation.csv) — structured valuation fields
 
 Run the repository's **Run Merritt Auction** GitHub Action again to refresh this catalog snapshot and its temporary photo batches.
 The **Update All Merritt Lot Bids** Action independently refreshes live.json on an auction-aware schedule (roughly hourly beforehand, every ten minutes on auction day); it does not rewrite catalog descriptions or photos.
