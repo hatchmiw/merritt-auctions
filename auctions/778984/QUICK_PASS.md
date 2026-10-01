@@ -63,9 +63,7 @@ condition-dependent value or max bid until its actual photos are inspected.
 - **Michigan/local material:** lots **28, 30, 68, 138, 141, and 328** deserve
   deliberate attention. Local identification can create more demand than generic
   examples of the same object.
-- **Coins:** these are easy to price systematically, but the Silver Eagles were
-  already at **$55–$60** before premium. The bargain case has to survive the
-  buyer's premium and live metal price.
+- **Coins:** the photo review found a material catalog problem. Lots **168–177 and 179** are described as 40% silver, but the photographed Eisenhower dollars are ordinary clad issues. Do **not** value those lots as bullion. Lots 163m–167m appear consistent with American Silver Eagles, lot 178 is a heavily damaged 1928 Peace dollar, and lot 180 contains one silver 1964 Kennedy half plus one clad 2001 half.
 - **Glassware:** there is substantial Fenton/Northwood/Jefferson/etc. material.
   Some pieces may be good, but this is fragile, photo-dependent inventory.
   Selective review beats blanket bidding.
@@ -84,9 +82,12 @@ condition-dependent value or max bid until its actual photos are inspected.
   weight, composition or authenticity.
 - Unmarked crocks when marked/local stoneware is available in the same auction.
 
-## Next review step
+## Photo review completed
 
-Use `photo-batches.json` and the GitHub Actions artifacts to visually inspect
-the A-priority lots. After that, assign **intent, condition, EV, bargain flag,
-risk-adjusted bid, personal stretch, and absolute ceiling** only where the
-photos support those judgments.
+The priority-lot visual pass is now complete. See [PHOTO_REVIEW.md](./PHOTO_REVIEW.md)
+and [photo-review.csv](./photo-review.csv) for the image-grounded findings,
+condition notes, revised priorities, and the Eisenhower-dollar silver correction.
+
+The next step is current-price/value analysis on the shortened survivor list,
+using **condition, intent, EV, bargain flag, risk-adjusted bid, personal stretch,
+and absolute ceiling**.
