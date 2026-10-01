@@ -34,7 +34,7 @@ condition-dependent value or max bid until its actual photos are inspected.
 | A | 163m–167m | $55–$60 | 1 oz American Silver Eagles | Intrinsic/value | Easy to compare against live silver value; premiums may erase bargain quickly. |
 | A | 168–180 | $8–$47 | Silver dollar / half-dollar group | Intrinsic/value | Metal content gives an objective floor; verify dates, composition and authenticity. |
 | A | 183 | $5 | 5-gal Western Cold Drink stoneware dispenser | Resale/collectible | Large stoneware can have value if complete and crack-free. Check lid/spigot. |
-| B | 194 | $3 | Two tarps, approx. 20x40 and 7x7 | Personal/farm | Potential farm/property utility if the large tarp is sound and dimensions are real. |
+| A | 194 | $3 | Two tarps, approx. 20x40 and 7x7 | **Personal use** | Potential farm/property utility if the large tarp is sound and dimensions are real. |
 | B | 207 | $4 | Mickey Mouse / Disney 8mm films | Resale/collectible | Niche collectible; titles, reels/boxes and film condition decide value. |
 | A | 208 | $8 | Bach Soloist trombone with hard case | Resale | Could have meaningful value if genuine/playable. Need model/serial and slide condition. |
 | A | 212 | $7 | Tin litho friction motorcycle — original box | Resale/collectible | Original box materially helps if toy is desirable. Need maker, function and box condition. |
