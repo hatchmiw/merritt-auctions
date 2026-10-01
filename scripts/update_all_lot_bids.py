@@ -470,8 +470,8 @@ def refresh_watchlist_compatibility(all_lots: dict[str, dict], checked_at: str) 
 def main() -> int:
     auction_ids = discover_auction_ids()
     if not auction_ids:
-        print("No auction snapshots found under auctions/.", file=sys.stderr)
-        return 2
+        print("No auction snapshots found under auctions/; nothing to refresh.")
+        return 0
 
     session = requests.Session(impersonate="chrome")
     session.get(HIBID_HOME, timeout=60)
