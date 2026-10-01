@@ -1,5 +1,6 @@
 name: Update All Merritt Lot Bids
-# Initial all-lot refresh trigger: a push to this workflow starts the same refresh job.
+# All-lot refresh trigger: workflow changes also start an immediate refresh job.
+# Catalog 778984 seeded; initialize live state.
 
 on:
   workflow_dispatch:
