@@ -467,15 +467,40 @@ def refresh_watchlist_compatibility(all_lots: dict[str, dict], checked_at: str) 
     WATCHLIST_LIVE.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
 
 
+
+def saved_archived_auction_is_final(previous: dict, now: datetime) -> bool:
+    """Avoid unnecessary HiBid requests for verified, long-closed archives.
+
+    Missing or inconsistent snapshots must retain normal remote eligibility
+    checks. This shares due_reason()'s 12-hour post-close grace period.
+    """
+    auction = previous.get("auction") or {}
+    summary = previous.get("summary") or {}
+    if not isinstance(auction, dict) or not isinstance(summary, dict):
+        return False
+
+    close_dt = parse_dt(auction.get("bidCloseDateTime") or auction.get("eventDateEnd"))
+    tracked = summary.get("trackedLots")
+    return (
+        close_dt is not None
+        and now > close_dt + timedelta(hours=12)
+        and auction.get("auctionStatus") == "ARCHIVED"
+        and auction.get("openLotCount") == 0
+        and type(tracked) is int
+        and tracked > 0
+        and summary.get("closedLots") == tracked
+        and summary.get("activeLots") == 0
+    )
+
+
 def main() -> int:
     auction_ids = discover_auction_ids()
     if not auction_ids:
         print("No auction snapshots found under auctions/; nothing to refresh.")
         return 0
 
-    session = requests.Session(impersonate="chrome")
-    session.get(HIBID_HOME, timeout=60)
-
+    # Establish a HiBid session only for auctions needing a server-side check.
+    session: requests.Session | None = None
     now = now_utc_dt()
     refreshed: list[tuple[int, dict]] = []
     skipped: list[tuple[int, str]] = []
@@ -484,6 +509,16 @@ def main() -> int:
     for auction_id in auction_ids:
         live_path = AUCTIONS_DIR / str(auction_id) / "live.json"
         previous = load_json(live_path)
+        if saved_archived_auction_is_final(previous, now):
+            reason = "saved archived snapshot confirms all lots closed"
+            skipped.append((auction_id, reason))
+            print(f"SKIP {auction_id}: {reason} (no HiBid request)")
+            continue
+
+        if session is None:
+            session = requests.Session(impersonate="chrome")
+            session.get(HIBID_HOME, timeout=60)
+
         try:
             details = auction_details(session, auction_id)
         except Exception as exc:
